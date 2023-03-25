@@ -1,0 +1,8 @@
+import os
+available_module="zigbee"
+print (available_module)
+select_module=(input(print("Введите нужный модуль:")))
+if select_module=="zigbee":
+  zigbee=('modules/zigbee')
+  os.chdir(zigbee)
+  os.system("python application.py")
